@@ -1,113 +1,265 @@
+import Head from "next/head";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <nav className="text-white flex justify-between items-center">
+        <div className="nav-logo">
+          <img src="ramos.png" alt="logo" />
+          <span>ramos</span>
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <ul className="nav-links">
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li>
+            <a href="#">Reports</a>
+          </li>
+          <li>
+            <a href="#">Documents</a>
+          </li>
+          <li>
+            <a href="#">History</a>
+          </li>
+          <li>
+            <a href="#">Settings</a>
+          </li>
+        </ul>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <button className="btn">Sign Up</button>
+      </nav>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <section className="section-1">
+        <div className="flex">
+          <div className="left-col">
+            <div className="line-1">
+              <img src="section-1-left.png" alt="image" />
+              <span>Analytics</span>
+            </div>
+            <div className="line-2">
+              that <span className="gray-text">help</span> you
+            </div>
+          </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+          <div>
+            <img src="section-1-right.png" alt="image" />
+          </div>
+        </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <div className="line-3">
+          shape <img src="line-3-img.png" alt="image" /> the future
+        </div>
+      </section>
+
+      <section className="section-2">
+        <div className="part-1">
+          <div className="left-panel">
+            <div>
+              Your key to strategic <br />
+              success through analytics
+            </div>
+          </div>
+          <div className="right-panel">
+            <div>
+              Ready for exciting, instantaneous,
+              <br />
+              all-accessible insights in real time?
+            </div>
+          </div>
+        </div>
+
+        <div className="part-2">
+          <div className="left-panel">
+            <img src="section-2-left.png" alt="img" />
+          </div>
+          <div className="right-panel">
+            <img src="section-2-right.png" alt="img" />
+          </div>
+        </div>
+
+        <div className="part-3">
+          <div>
+            <span className="upto">Up to</span>
+            <span className="percentage">45%</span>
+          </div>
+          <span className="paragraph">
+            Increase your analytics efficiency by up to 45%.
+            <br />
+            Unique algorithms provide insights from data, reduce time for
+            analysis
+            <br />
+            and save time for making important informed decisions
+          </span>
+        </div>
+      </section>
+
+      <section className="section-3">
+        <div className="part-1">
+          <div className="top">
+            Maximize <span className="gray-text">efficiency</span>
+            <br />
+            with our intuitive
+          </div>
+
+          <div className="bottom">
+            <img src="section-3-circles.png" alt="img" />
+
+            <div id="yellow-container">
+              <div id="scroll-text">analytics service</div>
+            </div>
+          </div>
+        </div>
+
+        <hr className="my-10" />
+
+        <div className="part-2">
+          <div>
+            Explore traffic sources, page behavior, conversations and more to
+            gain deep insight
+            <br />
+            into your audience. With us, your business doesn&apos;t just adapts
+            - it evolves
+          </div>
+
+          <div>
+            <button className="btn demo">Request a demo</button>
+            <button className="btn free-trial">Start for free</button>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-4">
+        <div className="top">
+          <div>
+            Turn data into real
+            <br />
+            actions and ideas.
+          </div>
+
+          <ul>
+            <li>
+              <span>Instant Insights</span>
+              <button className="icon">
+                <i className="fa fa-plus"></i>
+              </button>
+            </li>
+            <li>
+              <span>AI Technology</span>
+              <button className="icon">
+                <i className="fa fa-plus"></i>
+              </button>
+            </li>
+            <li>
+              <span>Easy Integration</span>
+              <button className="icon">
+                <i className="fa fa-plus"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div className="giant-ramos">Ramos</div>
+      </section>
+
+      <section className="section-5">
+        <div>
+          We give you full <br />
+          <span className="gray-text">control</span> over your data
+        </div>
+
+        <div>
+          <img src="section-5-duo.png" alt="img" />
+        </div>
+      </section>
+
+      <section className="section-6">
+        <div className="logo">
+          <img src="ramos.png" alt="ramos" />
+        </div>
+
+        <div id="get-started">Get Started</div>
+        <div className="info gray-text">
+          Turn information into advantage! Start using <br />
+          Ramos today. Sign up for a free trial.
+        </div>
+        <div>
+          <button className="btn demo">Request a demo</button>
+          <button className="btn free-trial">Start for free</button>
+        </div>
+      </section>
+
+      <footer>
+        <div className="flex justify-between items-center">
+          <ul className="nav">
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Why Us</a>
+            </li>
+            <li>
+              <a href="#">Platform</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+
+          <div className="email">hello@ramos.com</div>
+        </div>
+
+        <hr className="my-10" />
+
+        <div className="flex justify-between">
+          <div className="flex">
+            <div className="address">
+              <div className="add-name">Raleigh</div>
+              <span>
+                125 N Harrington StreetRaleigh,
+                <br />
+                NC 27603919.833.6413
+              </span>
+            </div>
+
+            <div className="address">
+              <div className="add-name">Charlotte</div>
+              <span>
+                221 Easy Peterson DriveCharlotte,
+                <br />
+                NC 27603919.833.6413
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <ul className="social">
+              <li>LinkedIn</li>
+              <li>Instagram</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-between">
+          <div id="footer-ramos">Ramos&reg;</div>
+
+          <div>
+            <ul className="legal">
+              <li>Privacy Policy</li>
+              <li>License Agreement</li>
+            </ul>
+          </div>
+
+          <div className="qr-code">
+            <img src="qr-code.png" alt="qr-code" />
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
