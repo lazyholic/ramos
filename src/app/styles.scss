@@ -227,8 +227,9 @@ h3 {
     top: 0;
     left: 0;
     z-index: -1;
-    background-size: 80px 80px;
-    background-image: linear-gradient(to right, grey 1px, transparent 1px),
+    background-size: 100px 100px;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(to right, lightgray 1px, transparent 1px),
       linear-gradient(to bottom, lightgray 1px, transparent 1px);
     border-radius: 150px;
   }
@@ -262,8 +263,20 @@ h3 {
     }
   }
 
+  .ramos-desktop {
+    position: absolute;
+    left: 50%;
+  }
+
+  .ramos-mobile {
+    position: absolute;
+    left: calc(50% - 180px);
+    top: 20%;
+    width: 360px;
+  }
+
   .giant-ramos {
-    font-size: 27vw;
+    font-size: 30vw;
     color: #fe4a23;
     font-weight: 600;
     text-align: center;
