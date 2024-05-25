@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 
+import Section1 from "./Components/Section1";
+
 const Ramos = () => {
   useEffect(() => {
     AOS.init();
@@ -36,48 +38,11 @@ const Ramos = () => {
         <button className="btn">Sign Up</button>
       </nav>
 
-      <section className="section-1" data-aos="fade-up">
-        <div className="flex">
-          <div className="left-col">
-            <div className="line-1">
-              <img
-                src="section-1-left.png"
-                alt="image"
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-              />
-              <span>Analytics</span>
-            </div>
-            <div className="line-2">
-              that <span className="gray-text">help</span> you
-            </div>
-          </div>
-
-          <div>
-            <img
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-              src="section-1-right.png"
-              alt="image"
-            />
-          </div>
-        </div>
-
-        <div className="line-3">
-          shape{" "}
-          <img
-            src="line-3-img.png"
-            alt="image"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          />{" "}
-          the future
-        </div>
-      </section>
+      <Section1 />
 
       <section className="section-2">
         <div className="part-1">
-          <div className="left-panel">
+          <div className="left-panel overflow-hidden">
             <div data-aos="fade-up">
               Your key to strategic <br />
               success through analytics
