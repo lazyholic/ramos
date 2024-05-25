@@ -36,11 +36,16 @@ const Ramos = () => {
         <button className="btn">Sign Up</button>
       </nav>
 
-      <section className="section-1">
+      <section className="section-1" data-aos="fade-up">
         <div className="flex">
           <div className="left-col">
             <div className="line-1">
-              <img src="section-1-left.png" alt="image" />
+              <img
+                src="section-1-left.png"
+                alt="image"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              />
               <span>Analytics</span>
             </div>
             <div className="line-2">
@@ -49,19 +54,31 @@ const Ramos = () => {
           </div>
 
           <div>
-            <img src="section-1-right.png" alt="image" />
+            <img
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              src="section-1-right.png"
+              alt="image"
+            />
           </div>
         </div>
 
         <div className="line-3">
-          shape <img src="line-3-img.png" alt="image" /> the future
+          shape{" "}
+          <img
+            src="line-3-img.png"
+            alt="image"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          />{" "}
+          the future
         </div>
       </section>
 
       <section className="section-2">
         <div className="part-1">
           <div className="left-panel">
-            <div>
+            <div data-aos="fade-up">
               Your key to strategic <br />
               success through analytics
             </div>
@@ -89,7 +106,7 @@ const Ramos = () => {
             <span className="upto">Up to</span>
             <span className="percentage">45%</span>
           </div>
-          <span className="paragraph">
+          <span className="paragraph" data-aos="fade-up">
             Increase your analytics efficiency by up to 45%.
             <br />
             Unique algorithms provide insights from data, reduce time for
@@ -103,7 +120,7 @@ const Ramos = () => {
       <section className="section-3">
         <div className="part-1">
           <div className="top">
-            Maximize <span className="gray-text">efficiency</span>
+            <span>Maximize</span> <span className="gray-text">efficiency</span>
             <br />
             with our intuitive
           </div>
@@ -111,7 +128,11 @@ const Ramos = () => {
           <div className="bottom">
             <img src="section-3-circles.png" alt="img" />
 
-            <div id="yellow-container">
+            <div
+              id="yellow-container"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <div id="scroll-text">analytics service</div>
             </div>
           </div>
@@ -129,8 +150,12 @@ const Ramos = () => {
           </div>
 
           <div>
-            <button className="btn demo">Request a demo</button>
-            <button className="btn free-trial">Start for free</button>
+            <button className="btn demo" data-aos="zoom-in">
+              Request a demo
+            </button>
+            <button className="btn free-trial" data-aos="zoom-in">
+              Start for free
+            </button>
           </div>
         </div>
       </section>
@@ -144,19 +169,19 @@ const Ramos = () => {
           </div>
 
           <ul>
-            <li>
+            <li data-aos="fade-up">
               <span>Instant Insights</span>
               <button className="icon">
                 <i className="fa fa-plus"></i>
               </button>
             </li>
-            <li>
+            <li data-aos="fade-up">
               <span>AI Technology</span>
               <button className="icon">
                 <i className="fa fa-plus"></i>
               </button>
             </li>
-            <li>
+            <li data-aos="fade-up">
               <span>Easy Integration</span>
               <button className="icon">
                 <i className="fa fa-plus"></i>
@@ -180,7 +205,7 @@ const Ramos = () => {
       </section>
 
       <section className="section-6">
-        <div className="logo">
+        <div className="logo" data-aos="zoom-out">
           <img src="ramos.png" alt="ramos" />
         </div>
 
@@ -190,13 +215,17 @@ const Ramos = () => {
           Ramos today. Sign up for a free trial.
         </div>
         <div>
-          <button className="btn demo">Request a demo</button>
-          <button className="btn free-trial">Start for free</button>
+          <button className="btn demo" data-aos="zoom-in">
+            Request a demo
+          </button>
+          <button className="btn free-trial" data-aos="zoom-in">
+            Start for free
+          </button>
         </div>
       </section>
 
       <footer>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center" data-aos="fade-up">
           <ul className="nav">
             <li>
               <a href="#">About</a>
@@ -220,7 +249,7 @@ const Ramos = () => {
 
         <hr className="my-10" />
 
-        <div className="flex justify-between">
+        <div className="flex justify-between" data-aos="fade-up">
           <div className="flex">
             <div className="address">
               <div className="add-name">Raleigh</div>
@@ -260,7 +289,7 @@ const Ramos = () => {
             </ul>
           </div>
 
-          <div className="qr-code">
+          <div className="qr-code" data-aos="zoom-in">
             <img src="qr-code.png" alt="qr-code" />
           </div>
         </div>
