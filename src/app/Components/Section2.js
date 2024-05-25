@@ -3,19 +3,19 @@ const Section2 = () => {
     <section className="section-2">
       <div className="part-1">
         <div className="left-panel overflow-hidden">
-          <div>
+          <h2>
             <div data-aos="fade-up">Your key to strategic</div>
             <div data-aos="fade-up" data-aos-delay="100">
               success through analytics
             </div>
-          </div>
+          </h2>
         </div>
         <div className="right-panel">
-          <div data-aos="fade-up">
+          <h3 data-aos="fade-up">
             Ready for exciting, instantaneous,
             <br />
             all-accessible insights in real time?
-          </div>
+          </h3>
         </div>
       </div>
 
@@ -31,7 +31,7 @@ const Section2 = () => {
       <div className="part-3">
         <div>
           <span className="upto">Up to</span>
-          <span className="percentage">45%</span>
+          <h1 className="percentage inline">45%</h1>
         </div>
         <span className="paragraph" data-aos="fade-up">
           Increase your analytics efficiency by up to 45%.

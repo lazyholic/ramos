@@ -7,9 +7,9 @@ const Section6 = () => {
         <img src="ramos.png" alt="ramos" />
       </div>
 
-      <div id="get-started">
+      <h1 id="get-started">
         <SUBL text="Get Started" />
-      </div>
+      </h1>
       <div className="info gray-text">
         Turn information into advantage! Start using <br />
         Ramos today. Sign up for a free trial.

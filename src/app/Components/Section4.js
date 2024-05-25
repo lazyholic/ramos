@@ -2,12 +2,12 @@ const Section4 = () => {
   return (
     <section className="section-4">
       <div className="top">
-        <div>
+        <h2>
           <div data-aos="fade-up">Turn data into real</div>
           <div data-aos="fade-up" data-aos-delay="100">
             actions and ideas.
           </div>
-        </div>
+        </h2>
 
         <ul>
           <li data-aos="fade-up">

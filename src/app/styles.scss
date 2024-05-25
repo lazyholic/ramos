@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Urbanist", sans-serif !important;
   background-color: white;
 }
 
@@ -48,11 +48,22 @@ nav {
   }
 }
 
-.section-1 {
+h1 {
   font-size: 135px;
-  letter-spacing: -5px;
-  margin: 100px 80px;
   line-height: 165px;
+  font-weight: 500;
+}
+h2 {
+  font-size: 55px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.section-1 {
+  margin: 100px 80px;
 
   .left-col {
     width: 75%;
@@ -92,20 +103,12 @@ nav {
   .part-1 {
     .left-panel {
       width: 60%;
-      div {
-        font-size: 50px;
-      }
     }
 
     .right-panel {
       width: 40%;
       display: flex;
       justify-content: center;
-      div {
-        font-size: 25px;
-        font-weight: 300;
-        letter-spacing: -1px;
-      }
     }
   }
 
@@ -139,13 +142,10 @@ nav {
       font-size: 30px;
     }
     .percentage {
-      font-size: 140px;
-      line-height: 1;
       margin: 0 20px;
     }
     .paragraph {
       font-size: 18px;
-      letter-spacing: -1px;
     }
   }
 }
@@ -154,10 +154,6 @@ nav {
   margin: 100px 80px;
 
   .part-1 {
-    font-size: 135px;
-    letter-spacing: -5px;
-    line-height: 165px;
-
     .bottom {
       display: flex;
       justify-content: space-between;
@@ -173,7 +169,6 @@ nav {
         #scroll-text {
           transform: translateX(100%);
           animation: my-animation 7s linear infinite;
-          line-height: 1;
           text-wrap: nowrap;
         }
 
@@ -200,7 +195,6 @@ nav {
 .section-6 {
   .btn {
     padding: 15px 35px;
-    letter-spacing: 0px;
     border-radius: 15px;
     font-weight: 300;
   }
@@ -216,7 +210,13 @@ nav {
 
 .section-4 {
   padding: 100px 80px;
-  background-image: linear-gradient(to bottom, #f9f9f9, #f9f9f9, transparent);
+  background-image: linear-gradient(
+    to bottom,
+    #f9f9f9,
+    #f9f9f9,
+    transparent,
+    transparent
+  );
 
   position: relative;
   &::before {
@@ -237,9 +237,6 @@ nav {
 
   .top {
     width: 50%;
-    div {
-      font-size: 50px;
-    }
 
     ul li {
       display: flex;
@@ -274,10 +271,7 @@ nav {
 }
 
 .section-5 {
-  font-size: 130px;
-  letter-spacing: -5px;
   margin: 100px 80px;
-  line-height: 165px;
 }
 
 .section-6 {
@@ -310,7 +304,6 @@ nav {
     font-size: 25px;
     text-align: center;
     margin: 20px 0;
-    letter-spacing: -1px;
   }
 }
 

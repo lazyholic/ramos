@@ -4,7 +4,7 @@ const Section3 = () => {
   return (
     <section className="section-3">
       <div className="part-1">
-        <div className="top">
+        <h1 className="top">
           <div className="flex">
             <SUBL text="Maximize " />
             <span className="gray-text">
@@ -12,7 +12,7 @@ const Section3 = () => {
             </span>
           </div>
           <SUBL text="with our intuitive" />
-        </div>
+        </h1>
 
         <div className="bottom">
           <img src="section-3-circles.png" alt="img" />
@@ -22,7 +22,7 @@ const Section3 = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            <div id="scroll-text">analytics service</div>
+            <h1 id="scroll-text">analytics service</h1>
           </div>
         </div>
       </div>

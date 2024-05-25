@@ -12,15 +12,17 @@ const Section1 = () => {
               data-aos="zoom-in"
               data-aos-duration="1000"
             />
-            <SUBL text="Analytics" />
+            <h1>
+              <SUBL text="Analytics" />
+            </h1>
           </div>
-          <div className="line-2">
+          <h1 className="line-2">
             <SUBL text="that " />
             <span className="gray-text">
               <SUBL text="help " startCount={5} />
             </span>{" "}
             <SUBL text="you" startCount={8} />
-          </div>
+          </h1>
         </div>
 
         <div>
@@ -33,7 +35,7 @@ const Section1 = () => {
         </div>
       </div>
 
-      <div className="line-3 flex justify-end items-center">
+      <h1 className="line-3 flex justify-end items-center">
         <SUBL text="shape " />
         <img
           src="line-3-img.png"
@@ -42,7 +44,7 @@ const Section1 = () => {
           data-aos-duration="1000"
         />{" "}
         <SUBL text="the future" startCount={6} />
-      </div>
+      </h1>
     </section>
   );
 };
