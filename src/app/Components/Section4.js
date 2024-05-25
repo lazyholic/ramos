@@ -3,9 +3,10 @@ const Section4 = () => {
     <section className="section-4">
       <div className="top">
         <div>
-          Turn data into real
-          <br />
-          actions and ideas.
+          <div data-aos="fade-up">Turn data into real</div>
+          <div data-aos="fade-up" data-aos-delay="100">
+            actions and ideas.
+          </div>
         </div>
 
         <ul>

@@ -3,9 +3,11 @@ const Section2 = () => {
     <section className="section-2">
       <div className="part-1">
         <div className="left-panel overflow-hidden">
-          <div data-aos="fade-up">
-            Your key to strategic <br />
-            success through analytics
+          <div>
+            <div data-aos="fade-up">Your key to strategic</div>
+            <div data-aos="fade-up" data-aos-delay="100">
+              success through analytics
+            </div>
           </div>
         </div>
         <div className="right-panel">

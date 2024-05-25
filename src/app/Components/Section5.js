@@ -1,9 +1,16 @@
+import SUBL from "./SlideUpByLetter";
+
 const Section5 = () => {
   return (
     <section className="section-5">
       <div>
-        We give you full <br />
-        <span className="gray-text">control</span> over your data
+        <SUBL text="We give you full" />
+        <div className="flex">
+          <span className="gray-text">
+            <SUBL text="control " />
+          </span>
+          <SUBL text="over your data" startCount={8} />
+        </div>
       </div>
 
       <div>

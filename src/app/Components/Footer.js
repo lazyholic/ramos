@@ -1,3 +1,5 @@
+import SUBL from "./SlideUpByLetter";
+
 const Footer = () => {
   return (
     <footer>
@@ -56,7 +58,10 @@ const Footer = () => {
       </div>
 
       <div className="flex items-center justify-between">
-        <div id="footer-ramos">Ramos&reg;</div>
+        <div id="footer-ramos">
+          {" "}
+          <SUBL text="Ramos&reg;" />
+        </div>
 
         <div>
           <ul className="legal">

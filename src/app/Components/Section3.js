@@ -1,11 +1,17 @@
+import SUBL from "./SlideUpByLetter";
+
 const Section3 = () => {
   return (
     <section className="section-3">
       <div className="part-1">
         <div className="top">
-          <span>Maximize</span> <span className="gray-text">efficiency</span>
-          <br />
-          with our intuitive
+          <div className="flex">
+            <SUBL text="Maximize " />
+            <span className="gray-text">
+              <SUBL text="efficiency " startCount={9} />
+            </span>
+          </div>
+          <SUBL text="with our intuitive" />
         </div>
 
         <div className="bottom">
