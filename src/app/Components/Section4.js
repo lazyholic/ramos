@@ -45,6 +45,7 @@ const Section4 = () => {
             src="ramos-mobile.png"
             alt="ramos-mobile"
             data-aos="fade-up"
+            data-aos-delay="100"
           />
         </div>
       </div>

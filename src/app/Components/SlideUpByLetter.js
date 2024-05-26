@@ -6,9 +6,13 @@ const SlideUpByLetter = ({ text, startCount = 0 }) => {
     let count = startCount;
 
     return letters.map((letter) => {
-      if (letter === " ") return <span>&nbsp;</span>;
+      if (letter === " ") return <span key={count}>&nbsp;</span>;
       return (
-        <div data-aos="fade-up" data-aos-delay={`${count++ * step}`}>
+        <div
+          key={count}
+          data-aos="fade-up"
+          data-aos-delay={`${count++ * step}`}
+        >
           {letter}
         </div>
       );
