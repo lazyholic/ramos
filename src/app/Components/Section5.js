@@ -13,7 +13,7 @@ const Section5 = () => {
         </div>
       </h1>
 
-      <div className="flex">
+      <div className="flex justify-center">
         <div className="card" data-aos="fade-up">
           <img
             src="section-5-left.png"
