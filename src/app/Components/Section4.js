@@ -1,6 +1,26 @@
+import { useEffect, useRef } from "react";
+
 const Section4 = () => {
+  const ramosWrapperRef = useRef(null);
+
+  useEffect(() => {
+    if (ramosWrapperRef.current) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("ramos-reveal");
+          } else {
+            entry.target.classList.remove("ramos-reveal");
+          }
+        });
+      });
+
+      observer.observe(ramosWrapperRef.current);
+    }
+  }, [ramosWrapperRef.current]);
+
   return (
-    <section className="section-4">
+    <section className="section-4 overflow-hidden">
       <div className="flex">
         <div className="top">
           <h2>
@@ -50,7 +70,12 @@ const Section4 = () => {
         </div>
       </div>
 
-      <div className="giant-ramos">Ramos</div>
+      <div className="relative">
+        <div className="giant-ramos-wrapper" ref={ramosWrapperRef}>
+          <div className="giant-ramos">Ramos</div>
+        </div>
+        <div className="ramos-shadow-sibling">Ramos</div>
+      </div>
     </section>
   );
 };

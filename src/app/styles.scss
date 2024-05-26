@@ -275,11 +275,33 @@ h3 {
     width: 360px;
   }
 
-  .giant-ramos {
+  .giant-ramos-wrapper {
+    position: absolute;
+    width: 0%;
+    height: 0vh;
+    overflow: hidden;
+    transition: all 2s;
+    transition-delay: 0.5s;
+    border-radius: 100%;
+
+    .giant-ramos {
+      font-size: 30vw;
+      color: #fe4a23;
+      font-weight: 600;
+      text-align: center;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  .ramos-reveal {
+    width: 110%;
+    height: 100vh;
+    border-radius: 0;
+  }
+  .ramos-shadow-sibling {
     font-size: 30vw;
-    color: #fe4a23;
-    font-weight: 600;
-    text-align: center;
+    color: transparent;
   }
 }
 
