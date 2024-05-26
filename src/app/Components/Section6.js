@@ -10,7 +10,7 @@ const Section6 = () => {
       <h1 id="get-started">
         <SUBL text="Get Started" />
       </h1>
-      <div className="info gray-text">
+      <div className="info">
         Turn information into advantage! Start using <br />
         Ramos today. Sign up for a free trial.
       </div>
