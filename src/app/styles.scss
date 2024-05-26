@@ -80,6 +80,37 @@ p {
       img {
         height: 120px;
       }
+
+      .circles {
+        display: flex;
+        .circle-1,
+        .circle-2 {
+          height: 110px;
+          width: 110px;
+          border-radius: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .circle-1 {
+          background-color: #f2f2f2;
+          color: #fe4a23;
+          position: relative;
+          z-index: -1;
+
+          svg {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .circle-2 {
+          background-color: #fe4a23;
+          margin-left: -30px;
+          z-index: 0;
+        }
+      }
     }
     .line-2 {
       display: flex;
@@ -234,6 +265,63 @@ p {
     .bottom {
       display: flex;
       justify-content: space-between;
+
+      .circles {
+        display: flex;
+        .circle-1,
+        .circle-2 {
+          height: 200px;
+          width: 200px;
+          border-radius: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .circle-1 {
+          background-color: #f2f2f2;
+          color: #f2f2f2;
+          position: relative;
+          z-index: 0;
+
+          svg {
+            padding: 10px;
+            width: 60px;
+            height: 60px;
+            background-color: #fe4a23;
+            border-radius: 20px;
+            z-index: 2;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            right: 10%;
+            width: 80%;
+            border-top: 2px dotted #fe4a23;
+            transform: translateY(-50%);
+            z-index: 1;
+          }
+        }
+        .circle-2 {
+          background-color: #ffd027;
+          margin-left: -30px;
+          z-index: -1;
+          h2 {
+            font-weight: 600;
+            font-size: 45px;
+          }
+          p {
+            color: black;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+      }
 
       #yellow-container {
         background-color: #ffd027;
