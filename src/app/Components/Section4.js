@@ -24,20 +24,20 @@ const Section4 = () => {
       <div className="flex">
         <div className="top">
           <h2>
-            <div data-aos="fade-up">Turn data into real</div>
+            <div data-aos="fade-up">Turning data into real</div>
             <div data-aos="fade-up" data-aos-delay="100">
               actions and ideas.
             </div>
           </h2>
 
           <ul>
-            <li data-aos="fade-up">
+            <li data-aos="fade-up" data-aos-delay="400">
               <span>Instant Insights</span>
               <button className="icon">
                 <i className="fa fa-plus"></i>
               </button>
             </li>
-            <li data-aos="fade-up">
+            <li data-aos="fade-up" data-aos-delay="200">
               <span>AI Technology</span>
               <button className="icon">
                 <i className="fa fa-plus"></i>

@@ -21,6 +21,11 @@ nav {
   }
 }
 
+a:hover,
+button:hover {
+  filter: brightness(85%);
+}
+
 .nav-links {
   background-color: #252525;
   border-radius: 15px;
