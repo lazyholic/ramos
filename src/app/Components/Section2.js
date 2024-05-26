@@ -1,3 +1,4 @@
+import SetupReports from "./SetupReports";
 import WidgetControl from "./WidgetControl";
 
 const Section2 = () => {
@@ -23,7 +24,7 @@ const Section2 = () => {
 
       <div className="part-2">
         <div className="left-panel">
-          <img src="section-2-left.png" alt="img" />
+          <SetupReports />
         </div>
         <div className="right-panel">
           <WidgetControl />

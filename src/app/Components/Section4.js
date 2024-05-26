@@ -66,6 +66,7 @@ const Section4 = () => {
             alt="ramos-mobile"
             data-aos="fade-up"
             data-aos-delay="100"
+            data-aos-duration="1000"
           />
         </div>
       </div>
