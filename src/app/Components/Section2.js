@@ -1,3 +1,5 @@
+import WidgetControl from "./WidgetControl";
+
 const Section2 = () => {
   return (
     <section className="section-2">
@@ -24,7 +26,7 @@ const Section2 = () => {
           <img src="section-2-left.png" alt="img" />
         </div>
         <div className="right-panel">
-          <img src="section-2-right.png" alt="img" />
+          <WidgetControl />
         </div>
       </div>
 

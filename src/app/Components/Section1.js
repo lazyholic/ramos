@@ -36,13 +36,13 @@ const Section1 = () => {
       </div>
 
       <h1 className="line-3 flex justify-end items-center">
-        <SUBL text="shape " />
+        <SUBL text="shape" />
         <img
           src="line-3-img.png"
           alt="image"
           data-aos="zoom-in"
           data-aos-duration="1000"
-        />{" "}
+        />
         <SUBL text="the future" startCount={6} />
       </h1>
     </section>
